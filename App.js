@@ -11,7 +11,7 @@ export default class App extends Component {
     this.setState(prevState => {
       return {
         places: prevState.places.concat(
-          { key: Math.random(), 
+          { key: Math.random().toString(), 
             value: placeName
            })
       };
