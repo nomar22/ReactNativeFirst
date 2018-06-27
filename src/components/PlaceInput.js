@@ -20,6 +20,10 @@ export default class PlaceInput extends React.Component {
         this.props.onPlaceAdded(this.state.placeName);
     }
 
+    onPressDeleteAll = ()=>{
+        this.props.onDeleteAll();
+    }
+
     render() {
         return (
             <View style={styles.inputContainer}>
@@ -33,6 +37,11 @@ export default class PlaceInput extends React.Component {
                     style={styles.placeButton}
                     title="Send"
                     onPress={this.onPressSend} />
+                  <Button
+                    // buttonStyle={styles.deleteButton}
+                    color="#841584"
+                    title="Delete All"
+                    onPress={this.onPressDeleteAll} />
             </View>
         );
     }
@@ -48,11 +57,15 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     placeInput: {
-        width: '70%'
+        width: '50%'
     },
     placeButton: {
-        width: '300%'
+        // width: '20%'
     },
+    // deleteButton: {
+    //     // width: '20%',
+    //     backgroundColor: "rgba(92, 99,216, 1)"
+    // },
 });
 
 

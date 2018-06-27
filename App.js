@@ -13,7 +13,7 @@ export default class App extends Component {
         places: prevState.places.concat(placeName)
       };
     });
-  }
+  };
 
   onRemovePressed = (item) => {
     this.setState(prevState => {
@@ -23,15 +23,20 @@ export default class App extends Component {
         })
       }
     });
+  };
 
-
-  }
+  deleteAllHandler = () => {
+    this.setState({
+      places: []
+    }
+    )
+  };
 
   render() {
 
     return (
       <View style={styles.container}>
-        <PlaceInput onPlaceAdded={this.placeAddedHandler} />
+        <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler} />
         <List items={this.state.places} removeHandler={this.onRemovePressed} />
       </View>
     );
