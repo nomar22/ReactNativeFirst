@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ImageBackground   } from 'react-native';
 import PlaceInput from './src/components/PlaceInput';
 import List from './src/components/List';
-import placeImage from './src/assets/lisbon.jpg'
+import image from './src/assets/lisbon.jpg';
+import background from './src/assets/watermark.gif';
 export default class App extends Component {
   state = {
     places: []
@@ -13,11 +14,20 @@ export default class App extends Component {
       return {
         places: prevState.places.concat(
           { key: Math.random().toString(), 
-            name: placeName,
-            img:placeImage
+            placeName,
+            img: image
            })
       };
     });
+  };
+
+  onPressItem = (id) => {
+    let clicked = this.state.places.find(({key})=>{
+      return key ===id;
+
+    });
+    alert(clicked.placeName);
+
   };
 
   onRemovePressed = (id) => {
@@ -40,10 +50,11 @@ export default class App extends Component {
   render() {
 
     return (
-      <View style={styles.container}>
-        <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler}  />
-        <List items={this.state.places} removeHandler={this.onRemovePressed} />
-      </View>
+      <ImageBackground source={background} style={styles.container}>
+        {/* <Image source={background}></Image> */}
+        <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler} />
+        <List items={this.state.places} removeHandler={this.onRemovePressed} showItemHandler={this.onPressItem}/>
+      </ImageBackground>
     );
   }
 }
@@ -52,9 +63,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 26,
-    backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    width: '100%',
+    justifyContent: 'flex-start'
   },
 
   listContainer: {

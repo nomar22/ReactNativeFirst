@@ -2,14 +2,15 @@ import React from 'react';
 import { View, TextInput,Button, StyleSheet } from 'react-native';
 
 
+
 export default class PlaceInput extends React.Component {
     state = {
         placeName:""
       }
       placeNameChangedHandler = (event)=>{
         this.setState(
-            {
-                placeName:event,
+            {  
+                placeName:event
             }
         );
     }
@@ -25,9 +26,10 @@ export default class PlaceInput extends React.Component {
     }
 
     render() {
-        return (
+        return ( 
             <View style={styles.inputContainer}>
                 <TextInput
+                    maxLength={15}
                     placeholder="Insert a cool place"
                     value={this.state.placeName}
                     style={styles.placeInput}
@@ -35,10 +37,9 @@ export default class PlaceInput extends React.Component {
                 />
                 <Button
                     style={styles.placeButton}
-                    title="Send"
+                    title="Add"
                     onPress={this.onPressSend} />
                   <Button
-                    // buttonStyle={styles.deleteButton}
                     color="#841584"
                     title="Delete All"
                     onPress={this.onPressDeleteAll} />
@@ -60,7 +61,6 @@ const styles = StyleSheet.create({
         width: '50%'
     },
     placeButton: {
-        // width: '20%'
     },
     // deleteButton: {
     //     // width: '20%',

@@ -11,9 +11,10 @@ export default (props) => {
             data={props.items}
             renderItem={({ item }) => (
                 <ListItem
-                    description={item.name}
+                    description={item.placeName}
                     placeImage={item.img}
-                    onItemPressed={() => {props.removeHandler(item.key)}} />
+                    onItemPressed={() => {props.showItemHandler(item.key)}} 
+                    onDelete ={()=>{props.removeHandler(item.key)}}/>
             )}
 
         />
