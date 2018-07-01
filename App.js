@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import PlaceInput from './src/components/PlaceInput';
 import List from './src/components/List';
+import placeImage from './src/assets/lisbon.jpg'
 export default class App extends Component {
   state = {
     places: []
@@ -12,7 +13,8 @@ export default class App extends Component {
       return {
         places: prevState.places.concat(
           { key: Math.random().toString(), 
-            value: placeName
+            name: placeName,
+            img:placeImage
            })
       };
     });
@@ -39,7 +41,7 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
-        <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler} />
+        <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler}  />
         <List items={this.state.places} removeHandler={this.onRemovePressed} />
       </View>
     );
