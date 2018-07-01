@@ -1,39 +1,43 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, ImageBackground   } from 'react-native';
+import { StyleSheet, Text, ImageBackground } from 'react-native';
 import PlaceInput from './src/components/PlaceInput';
 import List from './src/components/List';
 import image from './src/assets/lisbon.jpg';
-import background from './src/assets/watermark.gif';
+import background from './src/assets/world.png';
+import Detail from './src/components/Detail';
+
+
 export default class App extends Component {
   state = {
-    places: []
+    places: [],
+    selectedPlace: null
   }
 
   placeAddedHandler = (placeName) => {
     this.setState(prevState => {
       return {
         places: prevState.places.concat(
-          { key: Math.random().toString(), 
+          {
+            key: Math.random().toString(),
             placeName,
-            img: image
-           })
+            image
+          })
       };
     });
   };
 
   onPressItem = (id) => {
-    let clicked = this.state.places.find(({key})=>{
-      return key ===id;
-
+    this.setState({
+      selectedPlace: this.state.places.find(({ key }) => {
+        return key === id;
+      })
     });
-    alert(clicked.placeName);
-
   };
 
   onRemovePressed = (id) => {
     this.setState(prevState => {
       return {
-        places: prevState.places.filter(({key}) => {
+        places: prevState.places.filter(({ key }) => {
           return key != id;
         })
       }
@@ -47,13 +51,28 @@ export default class App extends Component {
     )
   };
 
+  onCloseModal = () => {
+    this.setState({selectedPlace:null})
+  }
+
   render() {
 
     return (
-      <ImageBackground source={background} style={styles.container}>
-        {/* <Image source={background}></Image> */}
+      <ImageBackground
+        source={background}
+        style={styles.container}>
+
+        <Detail
+          closeModal={this.onCloseModal}
+          selectedPlace={this.state.selectedPlace}
+
+        />
+        <Text> Insert some cool places </Text>
         <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler} />
-        <List items={this.state.places} removeHandler={this.onRemovePressed} showItemHandler={this.onPressItem}/>
+        <List
+          items={this.state.places}
+          removeHandler={this.onRemovePressed}
+          showItemHandler={this.onPressItem} />
       </ImageBackground>
     );
   }
@@ -64,7 +83,8 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 26,
     alignItems: 'center',
-    width: '100%',
+    // width: '100%',
+    height: '100%',
     justifyContent: 'flex-start'
   },
 
