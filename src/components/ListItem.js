@@ -6,7 +6,7 @@ export default (props) => (
         <View style={styles.listItem}  >
             <Image style={styles.placeImage} source={props.placeImage} />
             <Text> {props.description} </Text>
-        </View> 
+        </View>  
     </TouchableOpacity>
 ) 
 
