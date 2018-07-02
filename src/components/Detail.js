@@ -9,7 +9,7 @@ export default (props) => {
             <View>
                 <Image source={props.selectedPlace.image}
                 animationType="slide"/>
-                <Text> {props.selectedPlace.placeName} </Text>
+                <Text style={styles.placeName}> {props.selectedPlace.placeName} </Text>
             </View>
         )
     }
@@ -32,8 +32,11 @@ export default (props) => {
 
 const styles = StyleSheet.create({
     modalContainer: {
-        margin: 22 ,
-        width:'20%'
-        
+        margin: 22 
+    },
+    placeName:{
+        fontWeight:"bold",
+        textAlign: "center",
+        fontSize: 28
     }
 });

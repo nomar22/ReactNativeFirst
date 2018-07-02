@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, ImageBackground } from 'react-native';
+import { StyleSheet, Text, ImageBackground, Button, View } from 'react-native';
 import PlaceInput from './src/components/PlaceInput';
 import List from './src/components/List';
 import image from './src/assets/lisbon.jpg';
@@ -52,7 +52,19 @@ export default class App extends Component {
   };
 
   onCloseModal = () => {
-    this.setState({selectedPlace:null})
+    this.setState({ selectedPlace: null })
+  }
+
+  makeChoice = () => {
+    let size =  this.state.places.length;
+    let randomPlace = 0;
+    if (size > 0) {
+      randomPlace = Math.floor(Math.random() * (size));
+    }
+    this.setState({
+      selectedPlace: this.state.places[randomPlace]
+     }
+    );
   }
 
   render() {
@@ -67,7 +79,11 @@ export default class App extends Component {
           selectedPlace={this.state.selectedPlace}
 
         />
-        <Text> Insert some cool places </Text>
+        <View style={styles.choice}>
+          <Text style={styles.title}> Where should I go ?</Text>
+          <Button title="Choose" onPress={this.makeChoice} />
+
+        </View>
         <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler} />
         <List
           items={this.state.places}
@@ -87,8 +103,17 @@ const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'flex-start'
   },
+  title: {
+    fontWeight: "bold",
+    textAlign: "center",
+    fontSize: 28,
+    color: "blue"
+  },
 
   listContainer: {
     width: '100%'
+  },
+  choice: {
+    paddingBottom: 20
   }
 });
