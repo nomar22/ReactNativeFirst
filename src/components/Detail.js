@@ -8,7 +8,7 @@ export default (props) => {
         modalContent = (
             <View>
                 <Image source={props.selectedPlace.image}
-                animationType="slide"/>
+                    animationType="slide" />
                 <Text style={styles.placeName}> {props.selectedPlace.placeName} </Text>
             </View>
         )
@@ -18,12 +18,14 @@ export default (props) => {
         <Modal style={styles.modalContainer}
             visible={props.selectedPlace !== null}
             onRequestClose={props.closeModal}
-            >
-            <View style={styles.modalContainer}> 
-                {modalContent} 
-                <View> 
+            animationType="fade"
+            transparent={true}
+        >
+            <View style={styles.modalContainer}>
+                {modalContent}
+                <View>
                     <Button title="OK" onPress={props.closeModal} />
-                </View> 
+                </View>
             </View>
         </Modal>
     );
@@ -32,10 +34,14 @@ export default (props) => {
 
 const styles = StyleSheet.create({
     modalContainer: {
-        margin: 22 
+        top:"20%",
+        left:"10%",
+        width: 300,
+        height: 250,
+        backgroundColor: '#fff'
     },
-    placeName:{
-        fontWeight:"bold",
+    placeName: {
+        fontWeight: "bold",
         textAlign: "center",
         fontSize: 28
     }
