@@ -5,6 +5,7 @@ import List from './src/components/List';
 import image from './src/assets/lisbon.jpg';
 import background from './src/assets/world.png';
 import Detail from './src/components/Detail';
+import connect from 'react-redux';
 
 
 export default class App extends Component {
