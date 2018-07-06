@@ -5,44 +5,22 @@ import List from './src/components/List';
 import image from './src/assets/lisbon.jpg';
 import background from './src/assets/world.png';
 import Detail from './src/components/Detail';
-import connect from 'react-redux';
+import { connect } from 'react-redux';
+import { addPlace, selectPlace, deletePlace, deselectPlace } from './src/store/actions/places';
 
-
-export default class App extends Component {
-  state = {
-    places: [],
-    selectedPlace: null
-  }
+class App extends Component {
+ 
 
   placeAddedHandler = (placeName) => {
-    this.setState(prevState => {
-      return {
-        places: prevState.places.concat(
-          {
-            key: Math.random().toString(),
-            placeName,
-            image
-          })
-      };
-    });
+    this.props.onPlaceAdded(placeName);
   };
 
   onPressItem = (id) => {
-    this.setState({
-      selectedPlace: this.state.places.find(({ key }) => {
-        return key === id;
-      })
-    });
+    this.props.onSelectPlace(id);
   };
 
   onRemovePressed = (id) => {
-    this.setState(prevState => {
-      return {
-        places: prevState.places.filter(({ key }) => {
-          return key != id;
-        })
-      }
-    });
+    this.props.onDeletePlace(id);
   };
 
   deleteAllHandler = () => {
@@ -53,18 +31,18 @@ export default class App extends Component {
   };
 
   onCloseModal = () => {
-    this.setState({ selectedPlace: null })
+    this.props.onDeselectPlace();
   }
 
   makeChoice = () => {
-    let size =  this.state.places.length;
+    let size = this.state.places.length;
     let randomPlace = 0;
     if (size > 0) {
       randomPlace = Math.floor(Math.random() * (size));
     }
     this.setState({
       selectedPlace: this.state.places[randomPlace]
-     }
+    }
     );
   }
 
@@ -77,7 +55,7 @@ export default class App extends Component {
 
         <Detail
           closeModal={this.onCloseModal}
-          selectedPlace={this.state.selectedPlace}
+          selectedPlace={this.props.selectedPlace}
 
         />
         <View style={styles.choice}>
@@ -87,7 +65,7 @@ export default class App extends Component {
         </View>
         <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler} />
         <List
-          items={this.state.places}
+          items={this.props.places}
           removeHandler={this.onRemovePressed}
           showItemHandler={this.onPressItem} />
       </ImageBackground>
@@ -118,3 +96,20 @@ const styles = StyleSheet.create({
     paddingBottom: 20
   }
 });
+const mapStateToProps = state => {
+  return {
+    places: state.places.places,
+    selectedPlace: state.places.selectedPlace
+  };
+};
+const mapDispatchToProps = dispatch => {
+
+  return {
+    onPlaceAdded: (name) => dispatch(addPlace(name)),
+    onDeletePlace: (key) => dispatch(deletePlace(key)),
+    onSelectPlace: (key) => dispatch(selectPlace(key)),
+    onDeselectPlace: () => dispatch(deselectPlace())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
