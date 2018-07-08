@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, ImageBackground, Button, View } from 'react-native';
 import PlaceInput from './src/components/PlaceInput';
 import List from './src/components/List';
-import image from './src/assets/lisbon.jpg';
 import background from './src/assets/world.png';
 import Detail from './src/components/Detail';
 import { connect } from 'react-redux';
-import { addPlace, selectPlace, deletePlace, deselectPlace } from './src/store/actions/places';
+import { addPlace, selectPlace, deletePlace, deselectPlace, makeChoice, deleteAll } from './src/store/actions/places';
 
 class App extends Component {
  
@@ -24,10 +23,7 @@ class App extends Component {
   };
 
   deleteAllHandler = () => {
-    this.setState({
-      places: []
-    }
-    )
+    this.props.onDeleteAll();
   };
 
   onCloseModal = () => {
@@ -35,15 +31,7 @@ class App extends Component {
   }
 
   makeChoice = () => {
-    let size = this.state.places.length;
-    let randomPlace = 0;
-    if (size > 0) {
-      randomPlace = Math.floor(Math.random() * (size));
-    }
-    this.setState({
-      selectedPlace: this.state.places[randomPlace]
-    }
-    );
+    this.props.makeChoice();
   }
 
   render() {
@@ -60,7 +48,11 @@ class App extends Component {
         />
         <View style={styles.choice}>
           <Text style={styles.title}> Where should I go ?</Text>
-          <Button title="Choose" onPress={this.makeChoice} />
+          <Button 
+          title="Choose" 
+          onPress={this.makeChoice}  
+          disabled={this.props.places.length == 0}
+          />
 
         </View>
         <PlaceInput onPlaceAdded={this.placeAddedHandler} onDeleteAll={this.deleteAllHandler} />
@@ -70,6 +62,25 @@ class App extends Component {
           showItemHandler={this.onPressItem} />
       </ImageBackground>
     );
+  }
+}
+
+
+const mapStateToProps = state => {
+  return {
+    places: state.places.places,
+    selectedPlace: state.places.selectedPlace
+  };
+};
+const mapDispatchToProps = dispatch => {
+
+  return {
+    onPlaceAdded: (name) => dispatch(addPlace(name)),
+    onDeletePlace: (key) => dispatch(deletePlace(key)),
+    onSelectPlace: (key) => dispatch(selectPlace(key)),
+    onDeselectPlace: () => dispatch(deselectPlace()),
+    onDeleteAll:()=>dispatch(deleteAll()),
+    makeChoice: ()=> dispatch(makeChoice())
   }
 }
 
@@ -96,20 +107,5 @@ const styles = StyleSheet.create({
     paddingBottom: 20
   }
 });
-const mapStateToProps = state => {
-  return {
-    places: state.places.places,
-    selectedPlace: state.places.selectedPlace
-  };
-};
-const mapDispatchToProps = dispatch => {
-
-  return {
-    onPlaceAdded: (name) => dispatch(addPlace(name)),
-    onDeletePlace: (key) => dispatch(deletePlace(key)),
-    onSelectPlace: (key) => dispatch(selectPlace(key)),
-    onDeselectPlace: () => dispatch(deselectPlace())
-  }
-}
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
