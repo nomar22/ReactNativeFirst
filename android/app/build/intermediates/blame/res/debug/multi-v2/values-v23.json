@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\rafae\\Desktop\\Estudo\\react-native\\rn-course\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rafae\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.0.1.aar\\e88dc264caf3529d7894cf16be061fca\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\rafae\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.0.1.aar\\adb406d89c7396eabb86c10ddbaac8f6\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "4,7,8,9,15,23",
                         "startColumns": "4,4,4,4,4,4",

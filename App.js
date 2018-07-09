@@ -13,9 +13,9 @@ class App extends Component {
   placeAddedHandler = (placeName) => {
     this.props.onPlaceAdded(placeName);
   };
-
+ 
   onPressItem = (id) => {
-    this.props.onSelectPlace(id);
+    this.props.onSelectPlace(id); 
   };
 
   onRemovePressed = (id) => {

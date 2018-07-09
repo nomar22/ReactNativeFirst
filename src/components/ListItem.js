@@ -1,15 +1,17 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Button } from 'react-native';
 
+import Icon from 'react-native-vector-icons/Ionicons';
 export default (props) => (
     <TouchableOpacity onPress={props.onItemPressed}  >
         <View style={styles.listItem}  >
             <Image style={styles.placeImage} source={props.placeImage} />
             <Text> {props.description} </Text>
-            <Button
-                color="#841584"
-                title="Delete"
-                onPress={props.onDelete} />
+
+            
+            <TouchableOpacity onPress={props.onDelete}  >
+                <Icon color="#841584"  size={30} name="ios-trash" /> 
+            </TouchableOpacity>
         </View>
     </TouchableOpacity>
 )
@@ -28,6 +30,9 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
 
+    trash :{
+
+    },
     placeImage: {
         marginRight: 8,
         height: 30,

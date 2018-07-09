@@ -4,9 +4,10 @@ ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\
 INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-vector-icons] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\e88dc264caf3529d7894cf16be061fca\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\6996d4eb7cbda8c59cbfa40a6a83cf76\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\adb406d89c7396eabb86c10ddbaac8f6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\b25bf855e9ebc1a0970829962dcdc683\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\81db4d70b36683788ea9d4cb564f8a1c\AndroidManifest.xml:10:1-18:12
 MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\2b2053229a4c3c0071d3142369bf219d\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\11a5648240b51484d1f8de58805cda09\AndroidManifest.xml:2:1-9:12
@@ -47,10 +48,10 @@ application
 ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:7:5-24:19
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:13:5-20
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\e88dc264caf3529d7894cf16be061fca\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\e88dc264caf3529d7894cf16be061fca\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\6996d4eb7cbda8c59cbfa40a6a83cf76\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\6996d4eb7cbda8c59cbfa40a6a83cf76\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\adb406d89c7396eabb86c10ddbaac8f6\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\adb406d89c7396eabb86c10ddbaac8f6\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\b25bf855e9ebc1a0970829962dcdc683\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\b25bf855e9ebc1a0970829962dcdc683\AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\52a842587b39eb7e1971faab0eabd683\AndroidManifest.xml:3:3-17
 MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\52a842587b39eb7e1971faab0eabd683\AndroidManifest.xml:3:3-17
 MERGED from [org.webkit:android-jsc:r174650] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\07b1039557c065003a49004a3e2ad4a4\AndroidManifest.xml:2:3-17
@@ -93,12 +94,14 @@ uses-sdk
 INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\e88dc264caf3529d7894cf16be061fca\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\e88dc264caf3529d7894cf16be061fca\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\6996d4eb7cbda8c59cbfa40a6a83cf76\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\6996d4eb7cbda8c59cbfa40a6a83cf76\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\adb406d89c7396eabb86c10ddbaac8f6\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\adb406d89c7396eabb86c10ddbaac8f6\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\b25bf855e9ebc1a0970829962dcdc683\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\b25bf855e9ebc1a0970829962dcdc683\AndroidManifest.xml:20:5-43
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\81db4d70b36683788ea9d4cb564f8a1c\AndroidManifest.xml:14:5-16:41
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\81db4d70b36683788ea9d4cb564f8a1c\AndroidManifest.xml:14:5-16:41
 MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\2b2053229a4c3c0071d3142369bf219d\AndroidManifest.xml:5:5-7:41
