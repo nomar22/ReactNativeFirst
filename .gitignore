@@ -16,4 +16,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
  android\app\build
+=======
+/android/build
+/android/.gradle
+>>>>>>> 70b52ff24e37872fd27d29d2dee8abbda49be6dd
