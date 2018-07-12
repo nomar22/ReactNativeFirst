@@ -7,7 +7,12 @@ class FindPlaceScreen extends React.Component {
     render (){
         return (
             <View> 
-                <PlaceList places={this.props.places} />
+                <Text> SOMETHING</Text>
+
+                {/* <PlaceList places={this.props.places} /> */}
+                <PlaceList places={[{ key: Math.random().toString(),
+                        placeName:"new",},{ key: Math.random().toString(),
+                            placeName: "another"}] }/>
             </View>
         );
     }

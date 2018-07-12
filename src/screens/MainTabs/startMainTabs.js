@@ -14,7 +14,7 @@ export default () => {
                 {
                     screen: 'awesome-places.FindPlaceScreen',
                     label: 'Find Place',
-                    title: 'Find Place',
+                    title: 'Find Place', 
                     icon:sources[0]
     
                 },

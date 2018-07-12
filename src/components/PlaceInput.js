@@ -17,7 +17,7 @@ export default class PlaceInput extends React.Component {
     onPressSend = () => {
         if (this.state.placeName.trim() === "") {
             return;
-        }
+        } 
         this.props.onPlaceAdded(this.state.placeName);
         this.setState({
             placeName: ""
