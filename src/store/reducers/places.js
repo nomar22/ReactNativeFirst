@@ -1,8 +1,7 @@
 import { ADD_PLACE, DELETE_PLACE, DESELECT_PLACE, SELECT_PLACE, MAKE_CHOICE, DELETE_ALL } from '../actions/actionTypes'
 import image from '../../assets/lisbon.jpg';
 const initialState = {
-    places: [],
-    selectedPlace: null
+    places: []
 }
 
 const selectRandomPlace = (places) => {
@@ -38,18 +37,18 @@ const reducer = (state = initialState, action) => {
                 )
             };
 
-        case SELECT_PLACE:
-            return {
-                ...state,
-                selectedPlace: state.places.find(({ key }) => {
-                    return key === action.key;
-                })
-            };
-        case DESELECT_PLACE:
-            return {
-                ...state,
-                selectedPlace: null
-            };
+        // case SELECT_PLACE:
+        //     return {
+        //         ...state,
+        //         selectedPlace: state.places.find(({ key }) => {
+        //             return key === action.key;
+        //         })
+        //     };
+        // case DESELECT_PLACE:
+        //     return {
+        //         ...state,
+        //         selectedPlace: null
+        //     };
         case MAKE_CHOICE:
             return {
                 ...state,

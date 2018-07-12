@@ -1,4 +1,4 @@
-import { ADD_PLACE, DELETE_PLACE, SELECT_PLACE, DESELECT_PLACE, MAKE_CHOICE, DELETE_ALL} from './actionTypes'
+import { ADD_PLACE, DELETE_PLACE, MAKE_CHOICE, DELETE_ALL} from './actionTypes'
 
 export const addPlace = (placeName) => {
     return {
@@ -20,18 +20,18 @@ export const makeChoice = () => {
     }
 }
 
-export const selectPlace = (key) => {
-    return {
-        type: SELECT_PLACE,
-        key
-    };
-};
+// export const selectPlace = (key) => {
+//     return {
+//         type: SELECT_PLACE,
+//         key
+//     };
+// };
 
-export const deselectPlace = () => {
-    return {
-        type: DESELECT_PLACE
-    };
-};
+// export const deselectPlace = () => {
+//     return {
+//         type: DESELECT_PLACE
+//     };
+// };
 
 export const deleteAll = () => {
     return {
