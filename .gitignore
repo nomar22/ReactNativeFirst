@@ -15,13 +15,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
 
-<<<<<<< HEAD
- android\app\build
-=======
-/android/build
-/android/.gradle
->>>>>>> 70b52ff24e37872fd27d29d2dee8abbda49be6dd
-=======
->>>>>>> parent of 70b52ff... build data
+/android/app/build/
