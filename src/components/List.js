@@ -4,7 +4,6 @@ import ListItem from './ListItem';
 
 
 export default (props) => {
-
     return (
         <FlatList
             style={styles.listContainer}

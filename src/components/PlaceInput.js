@@ -25,10 +25,6 @@ export default class PlaceInput extends React.Component {
         );
     }
 
-    onPressDeleteAll = () => {
-        this.props.onDeleteAll();
-    }
-
     render() {
         return (
             <View style={styles.inputContainer}>
@@ -40,13 +36,9 @@ export default class PlaceInput extends React.Component {
                     onChangeText={this.placeNameChangedHandler}
                 />
                 <Button
-                    style={styles.placeButton}
                     title="Add"
                     onPress={this.onPressSend} />
-                <Button
-                    color="#841584"
-                    title="Delete All"
-                    onPress={this.onPressDeleteAll} />
+                
             </View>
         );
     };
@@ -58,7 +50,6 @@ const styles = StyleSheet.create({
     inputContainer: {
         flexDirection: 'row',
         width: "100%",
-        justifyContent: 'space-between',
         alignItems: 'center',
         paddingBottom: 20,
     },

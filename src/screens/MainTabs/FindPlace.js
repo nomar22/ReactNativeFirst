@@ -1,26 +1,33 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {connect } from 'react-redux';
-import PlaceList from '../../components/List';
+import { View, Text } from 'react-native';
+import { connect } from 'react-redux';
+import List from '../../components/List';
+import { deletePlace } from '../../store/actions/index'
 
 class FindPlaceScreen extends React.Component {
-    render (){
+    render() {
         return (
-            <View> 
-                <Text> SOMETHING</Text>
+            <View>
+                <List
+                    items={this.props.places}
+                    showItemHandler={() => alert('SHOW')}
+                    removeHandler={()=>alert('REMOVER')}
+                />
 
-                {/* <PlaceList places={this.props.places} /> */}
-                <PlaceList places={[{ key: Math.random().toString(),
-                        placeName:"new",},{ key: Math.random().toString(),
-                            placeName: "another"}] }/>
             </View>
         );
     }
 }
 
-const mapStateToProps= state =>{
+const mapDispatchToProps = dispatch => {
+    return {
+        onPlaceRemoved: () => dispatch(deletePlace())
+    }
+}
+
+const mapStateToProps = state => {
     return {
         places: state.places.places
     }
 }
-export default connect(mapStateToProps)(FindPlaceScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(FindPlaceScreen);
