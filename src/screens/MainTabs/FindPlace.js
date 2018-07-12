@@ -10,10 +10,10 @@ class FindPlaceScreen extends React.Component {
             <View>
                 <List
                     items={this.props.places}
-                    showItemHandler={() => alert('SHOW')}
-                    removeHandler={()=>alert('REMOVER')}
+                    showItemHandler={(id) => alert(id)}
+                    removeHandler={(id) => this.props.onPlaceRemoved(id)}
                 />
-
+ 
             </View>
         );
     }
@@ -21,7 +21,7 @@ class FindPlaceScreen extends React.Component {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onPlaceRemoved: () => dispatch(deletePlace())
+        onPlaceRemoved: (key) => dispatch(deletePlace(key))
     }
 }
 
