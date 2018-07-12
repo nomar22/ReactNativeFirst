@@ -17,3 +17,8 @@ yarn-debug.log*
 yarn-error.log*
 
 /android/app/build/
+/android/.gradle/4.4/fileHashes/fileHashes.bin
+/android/.gradle/4.4/fileHashes/fileHashes.lock
+/android/.gradle/4.4/javaCompile/javaCompile.lock
+/android/.gradle/4.4/taskHistory/
+/android/.gradle/buildOutputCleanup/
