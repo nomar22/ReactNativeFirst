@@ -1,0 +1,244 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-20:12
+MERGED from [:react-native-vector-icons] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:2:1-15:12
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-toolbar-1.5.4.aar\983fd8b20c6e625712314e7c8f35f2da\AndroidManifest.xml:2:1-14:12
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.0.6.aar\17595785957bb7516722196d8560ded6\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\a577e770c8523a0201be9d54fec9cacf\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\7f81adb81efd7165f512c0e25b8d4df4\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\a4c310c5e12038852c9fc2be4e8a4c23\AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\81db4d70b36683788ea9d4cb564f8a1c\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\2b2053229a4c3c0071d3142369bf219d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\11a5648240b51484d1f8de58805cda09\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\52a842587b39eb7e1971faab0eabd683\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\07b1039557c065003a49004a3e2ad4a4\AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\319887743ed635d00d9d13689b67ea55\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\4b54dacb84dd63f73869a2045ecf703d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\ceaff02089cfdc2ec19edaab567d9907\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\6fd127b0a80cfb004866bc26f9c00ddc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\6a60537faf2f812bc80540c5d5a5cfad\AndroidManifest.xml:17:1-26:12
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-1.5.4.aar\fb2e2e1f2a6487589b58c66a3e1d7cc1\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\59c098037247223fee31a2b6ffc66c19\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\cd9d17160c84ee9e1ba09ff032b2aa87\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\801ca6cf864c74c66f12aae1f06d0a7c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\82b3af55a89f0dca15ae2aab785ccaba\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\0efa841fa2755c6b971690391e54eb3d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\c33b16ec7727b70f5682cffff1df0299\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\cfe191d41c0341e4a5ac16a53dfef41c\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:2:5-27
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:5:22-75
+application
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:7:5-24:19
+MERGED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-18:19
+MERGED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-18:19
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:13:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-toolbar-1.5.4.aar\983fd8b20c6e625712314e7c8f35f2da\AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-toolbar-1.5.4.aar\983fd8b20c6e625712314e7c8f35f2da\AndroidManifest.xml:12:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.0.6.aar\17595785957bb7516722196d8560ded6\AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.0.6.aar\17595785957bb7516722196d8560ded6\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\a577e770c8523a0201be9d54fec9cacf\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\a577e770c8523a0201be9d54fec9cacf\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\7f81adb81efd7165f512c0e25b8d4df4\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\7f81adb81efd7165f512c0e25b8d4df4\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\a4c310c5e12038852c9fc2be4e8a4c23\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\a4c310c5e12038852c9fc2be4e8a4c23\AndroidManifest.xml:29:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\52a842587b39eb7e1971faab0eabd683\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\52a842587b39eb7e1971faab0eabd683\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\07b1039557c065003a49004a3e2ad4a4\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\07b1039557c065003a49004a3e2ad4a4\AndroidManifest.xml:2:3-17
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-1.5.4.aar\fb2e2e1f2a6487589b58c66a3e1d7cc1\AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-1.5.4.aar\fb2e2e1f2a6487589b58c66a3e1d7cc1\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\59c098037247223fee31a2b6ffc66c19\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\59c098037247223fee31a2b6ffc66c19\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\cd9d17160c84ee9e1ba09ff032b2aa87\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\cd9d17160c84ee9e1ba09ff032b2aa87\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\801ca6cf864c74c66f12aae1f06d0a7c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\801ca6cf864c74c66f12aae1f06d0a7c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\82b3af55a89f0dca15ae2aab785ccaba\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\82b3af55a89f0dca15ae2aab785ccaba\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\0efa841fa2755c6b971690391e54eb3d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\0efa841fa2755c6b971690391e54eb3d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\c33b16ec7727b70f5682cffff1df0299\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\c33b16ec7727b70f5682cffff1df0299\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\cfe191d41c0341e4a5ac16a53dfef41c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\cfe191d41c0341e4a5ac16a53dfef41c\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:8:7-38
+activity#com.rncourse.MainActivity
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:23:7-84
+MERGED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:9-17:40
+MERGED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:9-17:40
+	android:exported
+		ADDED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:17:13-37
+	android:name
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\7b0f26044b960a623b1233892ebea1ff\AndroidManifest.xml:7:5-9:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-toolbar-1.5.4.aar\983fd8b20c6e625712314e7c8f35f2da\AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-toolbar-1.5.4.aar\983fd8b20c6e625712314e7c8f35f2da\AndroidManifest.xml:8:5-10:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.0.6.aar\17595785957bb7516722196d8560ded6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\ahbottomnavigation-2.0.6.aar\17595785957bb7516722196d8560ded6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\a577e770c8523a0201be9d54fec9cacf\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\a577e770c8523a0201be9d54fec9cacf\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\7f81adb81efd7165f512c0e25b8d4df4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\7f81adb81efd7165f512c0e25b8d4df4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\a4c310c5e12038852c9fc2be4e8a4c23\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\a4c310c5e12038852c9fc2be4e8a4c23\AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\81db4d70b36683788ea9d4cb564f8a1c\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\81db4d70b36683788ea9d4cb564f8a1c\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\2b2053229a4c3c0071d3142369bf219d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\2b2053229a4c3c0071d3142369bf219d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\11a5648240b51484d1f8de58805cda09\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\11a5648240b51484d1f8de58805cda09\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\52a842587b39eb7e1971faab0eabd683\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\52a842587b39eb7e1971faab0eabd683\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\319887743ed635d00d9d13689b67ea55\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\319887743ed635d00d9d13689b67ea55\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\4b54dacb84dd63f73869a2045ecf703d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\4b54dacb84dd63f73869a2045ecf703d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\ceaff02089cfdc2ec19edaab567d9907\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\ceaff02089cfdc2ec19edaab567d9907\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\6fd127b0a80cfb004866bc26f9c00ddc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\6fd127b0a80cfb004866bc26f9c00ddc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\6a60537faf2f812bc80540c5d5a5cfad\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\6a60537faf2f812bc80540c5d5a5cfad\AndroidManifest.xml:20:5-43
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-1.5.4.aar\fb2e2e1f2a6487589b58c66a3e1d7cc1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\material-menu-1.5.4.aar\fb2e2e1f2a6487589b58c66a3e1d7cc1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\59c098037247223fee31a2b6ffc66c19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\59c098037247223fee31a2b6ffc66c19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\cd9d17160c84ee9e1ba09ff032b2aa87\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\cd9d17160c84ee9e1ba09ff032b2aa87\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\801ca6cf864c74c66f12aae1f06d0a7c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\801ca6cf864c74c66f12aae1f06d0a7c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\82b3af55a89f0dca15ae2aab785ccaba\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\82b3af55a89f0dca15ae2aab785ccaba\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\0efa841fa2755c6b971690391e54eb3d\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\0efa841fa2755c6b971690391e54eb3d\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\c33b16ec7727b70f5682cffff1df0299\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\c33b16ec7727b70f5682cffff1df0299\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\cfe191d41c0341e4a5ac16a53dfef41c\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\cfe191d41c0341e4a5ac16a53dfef41c\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml
+activity#com.reactnativenavigation.controllers.NavigationActivity
+ADDED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:9-14:86
+	android:configChanges
+		ADDED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:13-83
+	android:name
+		ADDED from [:react-native-navigation] C:\Users\rafae\Desktop\Estudo\react-native\rn-course\node_modules\react-native-navigation\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:13-84
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\a577e770c8523a0201be9d54fec9cacf\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\a577e770c8523a0201be9d54fec9cacf\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\7f81adb81efd7165f512c0e25b8d4df4\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\7f81adb81efd7165f512c0e25b8d4df4\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\a4c310c5e12038852c9fc2be4e8a4c23\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\a4c310c5e12038852c9fc2be4e8a4c23\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\6a60537faf2f812bc80540c5d5a5cfad\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\6a60537faf2f812bc80540c5d5a5cfad\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\59c098037247223fee31a2b6ffc66c19\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\59c098037247223fee31a2b6ffc66c19\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\cd9d17160c84ee9e1ba09ff032b2aa87\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\cd9d17160c84ee9e1ba09ff032b2aa87\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\801ca6cf864c74c66f12aae1f06d0a7c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\801ca6cf864c74c66f12aae1f06d0a7c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\82b3af55a89f0dca15ae2aab785ccaba\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\82b3af55a89f0dca15ae2aab785ccaba\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\0efa841fa2755c6b971690391e54eb3d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\0efa841fa2755c6b971690391e54eb3d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\c33b16ec7727b70f5682cffff1df0299\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\c33b16ec7727b70f5682cffff1df0299\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\cfe191d41c0341e4a5ac16a53dfef41c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\cfe191d41c0341e4a5ac16a53dfef41c\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\rafae\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\88e518d7a3a998a801d4ed04f91de69c\AndroidManifest.xml:26:9-47
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Users\rafae\Desktop\Estudo\react-native\rn-course\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
