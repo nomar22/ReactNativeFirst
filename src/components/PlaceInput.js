@@ -49,7 +49,7 @@ export default class PlaceInput extends React.Component {
                     onPress={this.onPressDeleteAll} />
             </View>
         );
-    }
+    };
 
 }
 

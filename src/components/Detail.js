@@ -23,7 +23,7 @@ export default (props) => {
         >
             <View style={styles.modalContainer}>
                 {modalContent}
-                <View>
+                <View> 
                     <Button title="OK" onPress={props.closeModal} />
                 </View>
             </View>
@@ -36,13 +36,14 @@ const styles = StyleSheet.create({
     modalContainer: {
         top:"20%",
         left:"10%",
+        // alignItems: 'center',
         width: 300,
         height: 250,
         backgroundColor: '#fff'
     },
-    placeName: {
+    placeName: { 
         fontWeight: "bold",
-        textAlign: "center",
+        textAlign: "center", 
         fontSize: 28
     }
 });
