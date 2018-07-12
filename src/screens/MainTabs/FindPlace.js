@@ -1,19 +1,30 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import { connect } from 'react-redux';
 import List from '../../components/List';
-import { deletePlace } from '../../store/actions/index'
+import { deletePlace } from '../../store/actions/index';
+import { deleteAll } from '../../store/actions/places';
 
 class FindPlaceScreen extends React.Component {
+    isNotEmpty = () => this.props.places.length > 0
+
     render() {
         return (
-            <View>
+            <View >
+               { this.isNotEmpty()?(
+                <Button 
+                    title="Remove All" 
+                    color="#841584"
+                    onPress={this.props.onDeleteAll} />)
+                    :(null)
+                }
+                
                 <List
                     items={this.props.places}
                     showItemHandler={(id) => alert(id)}
                     removeHandler={(id) => this.props.onPlaceRemoved(id)}
-                />
- 
+                />  
+
             </View>
         );
     }
@@ -21,7 +32,8 @@ class FindPlaceScreen extends React.Component {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onPlaceRemoved: (key) => dispatch(deletePlace(key))
+        onPlaceRemoved: (key) => dispatch(deletePlace(key)),
+        onDeleteAll: () => dispatch(deleteAll())
     }
 }
 
