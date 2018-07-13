@@ -3,6 +3,7 @@ import { View, TextInput, Button, StyleSheet } from 'react-native';
 
 
 
+
 export default class PlaceInput extends React.Component {
     state = {
         placeName: ""

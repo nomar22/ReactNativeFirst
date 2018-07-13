@@ -1,19 +1,39 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import { connect } from 'react-redux';
 import List from '../../components/List';
-import { deletePlace } from '../../store/actions/index'
+import { deletePlace } from '../../store/actions/index';
+import { deleteAll } from '../../store/actions/places';
 
 class FindPlaceScreen extends React.Component {
+    itemSelectHandler = id => {
+        this.props.navigator.push({
+            screen: 'awesome-places.DetailScreen',
+            passProps: {
+                selectedPlace: this.props.places.find(({ key }) => key === id)
+            },
+            animated: true,
+            backButtonTitle: 'Back'
+
+        });
+    }
+
+
     render() {
         return (
             <View>
+                {this.props.places.length > 0 ? (<Button
+                    title="Delete All"
+                    onPress={this.props.onPressDeleteAll} />)
+                : (null)}
+
+
                 <List
                     items={this.props.places}
-                    showItemHandler={(id) => alert(id)}
+                    showItemHandler={(id) => this.itemSelectHandler(id)}
                     removeHandler={(id) => this.props.onPlaceRemoved(id)}
                 />
- 
+
             </View>
         );
     }
@@ -21,7 +41,8 @@ class FindPlaceScreen extends React.Component {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onPlaceRemoved: (key) => dispatch(deletePlace(key))
+        onPlaceRemoved: (key) => dispatch(deletePlace(key)),
+        onPressDeleteAll: () => dispatch(deleteAll())
     }
 }
 
