@@ -7,11 +7,13 @@ import { deleteAll } from '../../store/actions/places';
 
 class FindPlaceScreen extends React.Component {
     itemSelectHandler = id => {
+        const place = this.props.places.find(({ key }) => key === id);
         this.props.navigator.push({
             screen: 'awesome-places.DetailScreen',
             passProps: {
-                selectedPlace: this.props.places.find(({ key }) => key === id)
+                selectedPlace: place
             },
+            title:place.placeName,
             animated: true,
             backButtonTitle: 'Back'
 
