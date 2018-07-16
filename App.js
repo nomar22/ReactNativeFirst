@@ -18,8 +18,8 @@ Navigation.registerComponent(
    () => AuthScreen,
     store, 
     Provider);
-Navigation.registerComponent("awesome-places.FindPlaceScreen", () => FindPlaceScreen, store, Provider);
-Navigation.registerComponent("awesome-places.SharePlaceScreen", () => SharePlaceScreen, store, Provider);
+    Navigation.registerComponent("awesome-places.SharePlaceScreen", () => SharePlaceScreen, store, Provider);
+    Navigation.registerComponent("awesome-places.FindPlaceScreen", () => FindPlaceScreen, store, Provider);
 Navigation.registerComponent("awesome-places.DetailScreen", () => DetailScreen);
 
 

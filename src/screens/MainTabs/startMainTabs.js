@@ -11,18 +11,19 @@ export default () => {
     ]).then(sources => {
         Navigation.startTabBasedApp({
             tabs: [
-                {
-                    screen: 'awesome-places.FindPlaceScreen',
-                    label: 'Find Place',
-                    title: 'Find Place', 
-                    icon:sources[0]
-    
-                },
+
                 {
                     screen: 'awesome-places.SharePlaceScreen',
                     label: 'Share Place',
                     title: 'Share Place',
-                    icon:sources[1]
+                    icon: sources[1]
+                },
+                {
+                    screen: 'awesome-places.FindPlaceScreen',
+                    label: 'Find Place',
+                    title: 'Find Place',
+                    icon: sources[0]
+
                 }
             ]
         }
