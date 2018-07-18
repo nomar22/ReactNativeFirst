@@ -8,7 +8,7 @@ import configureStore from './src/store/configureStore';
 import DetailScreen from './src/screens//MainTabs/Detail';
 
 const store = configureStore();
-
+ 
 
 
 
@@ -29,6 +29,11 @@ Navigation.registerComponent("awesome-places.DetailScreen", () => DetailScreen);
 Navigation.startSingleScreenApp({
   screen: {
     screen: "awesome-places.AuthScreen",
-    title: "Login"
+    title: "Login",
+    navigatorStyle: {
+      navBarBackgroundColor: '#551A8B',
+      navBarTextFontBold:true,
+      navBarTextColor:'#ff9900'
+  }
   }
 });
