@@ -26,6 +26,7 @@ class FindPlaceScreen extends React.Component {
             <View>
                 {this.props.places.length > 0 ? (<Button
                     title="Delete All"
+                    color="#841584"
                     onPress={this.props.onPressDeleteAll} />)
                 : (null)}
 

@@ -5,10 +5,21 @@ import { connect } from 'react-redux';
 import { addPlace } from '../../store/actions/index'
 
 class SharePlaceScreen extends React.Component {
-    placeAddHandler = placeName =>{
+    constructor(props) {
+        super(props);
+        this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+    }
+
+    onNavigatorEvent = event => {
+        console.log(event);
+    }
+
+    placeAddHandler = placeName => {
         this.props.onPlaceAdd(placeName);
     }
-    render() { 
+
+
+    render() {
         return (
             <View>
                 <PlaceInput onPlaceAdded={this.placeAddHandler} />
@@ -23,4 +34,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null,mapDispatchToProps)(SharePlaceScreen);
+export default connect(null, mapDispatchToProps)(SharePlaceScreen);

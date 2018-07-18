@@ -22,8 +22,8 @@ export default (props) => {
 
 
 const styles = StyleSheet.create({
-    listContainer: {
+    listContainer: { 
         width: '100%',
-        marginTop:'20%'
+        marginTop:'10%'
     }
 });
