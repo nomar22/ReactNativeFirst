@@ -17,7 +17,11 @@ export default () => {
                     screen: 'awesome-places.FindPlaceScreen', // unique ID registered with Navigation.registerScreen
                     icon: sources[0], // local image asset for the tab icon unselected state (optional on iOS)
                     title: 'Find Place', // title of the screen as appears in the nav bar (optional)
-                    navigatorStyle: {}, // override the navigator style for the tab  screen, see "Styling the navigator" below (optional),
+                    navigatorStyle: {
+                        navBarBackgroundColor: '#551A8B',
+                        navBarTextFontBold:true,
+                        navBarTextColor:'#ff9900'
+                    }, // override the navigator style for the tab  screen, see "Styling the navigator" below (optional),
                     navigatorButtons: {
                         leftButtons: {
                             icon: sources[2],
@@ -29,7 +33,12 @@ export default () => {
                     label: 'Share Place',
                     screen: 'awesome-places.SharePlaceScreen',
                     icon: sources[1],
-                    title: 'Share Place'
+                    title: 'Share Place',
+                    navigatorStyle: {
+                        navBarBackgroundColor: '#551A8B',
+                        navBarTextFontBold:true,
+                        navBarTextColor:'#ff9900'
+                    }
                 }
             ],
             appStyle: {
