@@ -22,5 +22,6 @@ yarn-error.log*
 /android/.gradle/4.4/javaCompile/javaCompile.lock
 /android/.gradle/4.4/taskHistory/
 /android/.gradle/buildOutputCleanup/
+/android/.idea/
 .babelrc
 .watchmanconfig
