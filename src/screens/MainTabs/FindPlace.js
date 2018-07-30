@@ -3,9 +3,26 @@ import { View, Text, Button } from 'react-native';
 import { connect } from 'react-redux';
 import List from '../../components/List';
 import { deletePlace } from '../../store/actions/index';
-import { deleteAll,makeChoice } from '../../store/actions/places';
+import { deleteAll, makeChoice } from '../../store/actions/places';
 
 class FindPlaceScreen extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+    }
+
+    onNavigatorEvent = event => {
+        if (event.type === "NavBarButtonPress") {
+            if (event.id === "sideDrawerToggle") {
+                this.props.navigator.toggleDrawer({
+                    side: 'left',
+                    animated: true,
+                    to: 'open'
+                })
+            }
+        }
+    }
     itemSelectHandler = id => {
         const place = this.props.places.find(({ key }) => key === id);
         this.props.navigator.push({
@@ -13,7 +30,7 @@ class FindPlaceScreen extends React.Component {
             passProps: {
                 selectedPlace: place
             },
-            title: place.placeName, 
+            title: place.placeName,
             animated: true,
             backButtonTitle: 'Back'
 
@@ -22,7 +39,7 @@ class FindPlaceScreen extends React.Component {
 
     onChoiceForMe = () => {
         this.props.onMakeChoice();
-        if(this.props.selectedPlace){
+        if (this.props.selectedPlace) {
             this.itemSelectHandler(this.props.selectedPlace.key);
         }
     }
@@ -48,14 +65,14 @@ class FindPlaceScreen extends React.Component {
 
             </View>
         );
-    } 
+    }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
         onPlaceRemoved: (key) => dispatch(deletePlace(key)),
         onPressDeleteAll: () => dispatch(deleteAll()),
-        onMakeChoice : ()=> dispatch(makeChoice())
+        onMakeChoice: () => dispatch(makeChoice())
     }
 }
 

@@ -11,7 +11,15 @@ class SharePlaceScreen extends React.Component {
     }
 
     onNavigatorEvent = event => {
-        console.log(event);
+        if (event.type === "NavBarButtonPress") {
+            if (event.id === "sideDrawerToggle") {
+                this.props.navigator.toggleDrawer({
+                    side:'left',
+                    animated:true,
+                    to: 'open'
+                })
+            }
+        }
     }
 
     placeAddHandler = placeName => {

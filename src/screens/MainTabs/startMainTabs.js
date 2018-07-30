@@ -19,14 +19,17 @@ export default () => {
                     title: 'Find Place', // title of the screen as appears in the nav bar (optional)
                     navigatorStyle: {
                         navBarBackgroundColor: '#551A8B',
-                        navBarTextFontBold:true,
-                        navBarTextColor:'#ff9900'
+                        navBarTextFontBold: true,
+                        navBarTextColor: '#ff9900'
                     }, // override the navigator style for the tab  screen, see "Styling the navigator" below (optional),
                     navigatorButtons: {
-                        leftButtons: {
-                            icon: sources[2],
-                            title: "Menu"
-                        }
+                        leftButtons: [
+                            {
+                                icon: sources[2],
+                                title: "Menu",
+                                id:"sideDrawerToggle"
+                            }
+                        ],
                     } // override the nav buttons for the tab screen, see "Adding buttons to the navigator" below (optional)
                 },
                 {
@@ -36,9 +39,19 @@ export default () => {
                     title: 'Share Place',
                     navigatorStyle: {
                         navBarBackgroundColor: '#551A8B',
-                        navBarTextFontBold:true,
-                        navBarTextColor:'#ff9900'
+                        navBarTextFontBold: true,
+                        navBarTextColor: '#ff9900'
+                    },
+                    navigatorButtons: {
+                        leftButtons: [
+                            {
+                                icon: sources[2],
+                                title: "Menu",
+                                id:"sideDrawerToggle"
+                            }
+                        ],
                     }
+                    
                 }
             ],
             appStyle: {
@@ -55,11 +68,7 @@ export default () => {
                     screen: 'awesome-places.SideDrawerScreen', // unique ID registered with Navigation.registerScreen
                     passProps: {}, // simple serializable object that will pass as props to all top screens (optional),
                     fixedWidth: 500, // a fixed width you want your left drawer to have (optional)
-                },
-                right: { // optional, define if you want a drawer from the right
-                    screen: 'awesome-places.SideDrawerScreen', // unique ID registered with Navigation.registerScreen
-                    passProps: {}, // simple serializable object that will pass as props to all top screens (optional)
-                    fixedWidth: 500, // a fixed width you want your right drawer to have (optional)
+                    icon: sources[0]
                 },
                 disableOpenGesture: false // optional, can the drawer be opened with a swipe instead of button
             },
@@ -70,60 +79,5 @@ export default () => {
     }
     )
 }
-    //     Navigation.startTabBasedApp({
-    //         tabs: [
-
-    //             {
-    //                 screen: 'awesome-places.SharePlaceScreen',
-    //                 label: 'Share Place',
-    //                 title: 'Share Place',
-    //                 icon: sources[1]
-    //                 // title: 'Screen One', // title of the screen as appears in the nav bar (optional)
-    //                 // navigatorButtons: {
-    //                 //     leftButtons: {
-    //                 //         // icon: sources[1], 
-    //                 //         title: "Menu"
-    //                 //     }
-    //                 // }
-
-    //             },
-    //             {
-    //                 screen: 'awesome-places.FindPlaceScreen',
-    //                 label: 'Find Place',
-    //                 title: 'Find Place',
-    //                 icon: sources[0]
-
-    //             },
-    //             {
-    //                 screen: 'awesome-places.FindPlaceScreen',
-    //                 label: 'Find Place',
-    //                 title: 'Find Place',
-    //                 icon: sources[0]
-
-    //             },
-    //             {
-    //                 screen: 'awesome-places.FindPlaceScreen',
-    //                 label: 'Find Place',
-    //                 title: 'Find Place',
-    //                 icon: sources[0]
-
-    //             },
-    //             {
-    //                 screen: 'awesome-places.FindPlaceScreen',
-    //                 label: 'Find Place',
-    //                 title: 'Find Place',
-    //                 icon: sources[0]
-
-    //             }
-    //         ]
-    //     }
-    //     );
-    // }
-    // );
-
-
-
-
-
-// }
+    
 
