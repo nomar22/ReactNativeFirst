@@ -7,7 +7,6 @@ import { deleteAll,makeChoice } from '../../store/actions/places';
 
 class FindPlaceScreen extends React.Component {
     itemSelectHandler = id => {
-        console.log('selecting')
         const place = this.props.places.find(({ key }) => key === id);
         this.props.navigator.push({
             screen: 'awesome-places.DetailScreen',
