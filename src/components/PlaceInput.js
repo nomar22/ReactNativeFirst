@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
+import Defaultinput from './UI/Defaultinput';
 
 
 
@@ -29,11 +30,10 @@ export default class PlaceInput extends React.Component {
     render() {
         return (
             <View style={styles.inputContainer}>
-                <TextInput
+                <Defaultinput
                     maxLength={15}
                     placeholder="Insert a cool place"
                     value={this.state.placeName}
-                    style={styles.placeInput}
                     onChangeText={this.placeNameChangedHandler}
                 />
                 <Button
@@ -50,12 +50,9 @@ export default class PlaceInput extends React.Component {
 const styles = StyleSheet.create({
     inputContainer: {
         flexDirection: 'row',
-        width: "100%",
+        width: "80%",
         alignItems: 'center',
         paddingBottom: 20,
-    },
-    placeInput: {
-        width: '50%'
     }
 
 });
