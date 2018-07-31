@@ -14,7 +14,8 @@ class AuthScreen extends Component {
             <View>
                 <Text> Welcome </Text>
                 <Button title="Login" onPress={this.loginHandler} />
-            </View>);
+            </View>
+        );
     }
 }
 

@@ -67,7 +67,6 @@ export default () => {
                 left: { // optional, define if you want a drawer from the left
                     screen: 'awesome-places.SideDrawerScreen', // unique ID registered with Navigation.registerScreen
                     passProps: {}, // simple serializable object that will pass as props to all top screens (optional),
-                    fixedWidth: 500, // a fixed width you want your left drawer to have (optional)
                     icon: sources[0]
                 },
                 disableOpenGesture: false // optional, can the drawer be opened with a swipe instead of button

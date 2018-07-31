@@ -37,18 +37,6 @@ const reducer = (state = initialState, action) => {
                 )
             };
 
-        // case SELECT_PLACE:
-        //     return {
-        //         ...state,
-        //         selectedPlace: state.places.find(({ key }) => {
-        //             return key === action.key;
-        //         })
-        //     };
-        // case DESELECT_PLACE:
-        //     return {
-        //         ...state,
-        //         selectedPlace: null
-        //     };
         case MAKE_CHOICE:
             return {
                 ...state,

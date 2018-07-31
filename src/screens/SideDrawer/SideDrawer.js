@@ -1,20 +1,21 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Dimensions} from 'react-native';
 class SideDrawer extends React.Component{
     render(){
         return (
-            <View>
-                <Text style={styles.sideDrawer} >SIDE Drawer</Text>
+            <View style={[styles.container, {width:Dimensions.get("window").width * 0.8}]}>
+                <Text  >SIDE Drawer</Text>
             </View>
         );
     };
 };
 
 const styles = StyleSheet.create({
-    sideDrawer: {
-        color:"#ff9900",
-        backgroundColor:"#551A8B"
-    }
+    container: {
+        paddingTop:22,
+        backgroundColor:"white",
+        flex: 1
+        }
 
 });
 
