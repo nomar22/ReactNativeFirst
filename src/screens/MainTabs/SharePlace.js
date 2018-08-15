@@ -1,19 +1,17 @@
 import React from 'react';
 import { 
     View, 
-    Text,
     Button, 
-    TextInput, 
     StyleSheet, 
-    ScrollView,
-    Image
+    ScrollView
  } from 'react-native';
 import { connect } from 'react-redux';
 import { addPlace } from '../../store/actions/index';
-import DefaultInput from '../../components/UI/Defaultinput';
 import MainText from '../../components/UI/MainText';
 import HeadingText from '../../components/UI/HeadingText';
-import imagePlaceholder from '../../assets/lisbon.jpg'
+import PlaceInput from '../../components/PlaceInput';
+import PickImage from '../../components/PickImage';
+import PickLocation from '../../components/PickLocation';
 
 class SharePlaceScreen extends React.Component {
     constructor(props) {
@@ -45,19 +43,9 @@ class SharePlaceScreen extends React.Component {
                     <MainText>
                         <HeadingText> Share a Place !</HeadingText>
                     </MainText>
-                    <View>
-                       <Image source={imagePlaceholder} style={styles.previewImage} />
-                    </View>
-                    <View style={styles.button}>
-                        <Button onPress={() => { }} title="Pick Image" />
-                    </View>
-                    <View style={styles.placeHolder}>
-                        <Text>Map</Text>
-                    </View>
-                    <View style={styles.button}>
-                        <Button onPress={() => { }} title="Locate Me" />
-                    </View>
-                    <DefaultInput placeholder="Place Name" />
+                    <PickImage  />
+                    <PickLocation  />
+                    <PlaceInput  />
                     <View style={styles.button}>
                         <Button onPress={() => { }} title="Share the Place" />
                     </View>
