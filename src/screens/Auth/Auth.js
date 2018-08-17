@@ -19,9 +19,8 @@ class AuthScreen extends Component {
             <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
                 <View style={styles.container}>
                     <MainText>
-                        <HeadingText> Welcome </HeadingText>
+                        <HeadingText> Awesome Places </HeadingText>
                     </MainText>
-                    <ButtonWithBackground backgroundColor='#29aaf4' onPress={() => { alert('Login')}} title="Switch to Login " />
                     <View style={styles.inputContainer} >
                         <Defaultinput placeholder="Email" style={styles.input} />
                         <Defaultinput secureTextEntry={true} style={styles.input} placeholder="Password" />

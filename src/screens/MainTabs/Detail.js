@@ -1,11 +1,17 @@
 import React from 'react';
 import { View, Image, Text, Button, StyleSheet } from 'react-native';
+import MainText from '../../components/UI/MainText';
+import HeadingText from '../../components/UI/HeadingText';
 
 export default (props) => {
-    return (<View >
-        <Image source={props.selectedPlace.image}
+    return (<View style={styles.container}>
+        <MainText style={styles.placeName}>
+            <HeadingText>
+                 {props.selectedPlace.placeName}
+            </HeadingText>
+        </MainText>
+        <Image source={props.selectedPlace.image} style={styles.image}
             animationType="slide" />
-        <Text style={styles.placeName}> {props.selectedPlace.placeName} </Text>
         <Button
             title="Back"
             onPress={() => props.navigator.pop({
@@ -19,6 +25,15 @@ export default (props) => {
 
 
 const styles = StyleSheet.create({
+    image:{
+        margin: 5,
+    },
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        display: 'flex',
+    },
     placeName: {
         fontWeight: "bold",
         textAlign: "center",

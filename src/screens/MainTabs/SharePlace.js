@@ -58,9 +58,11 @@ class SharePlaceScreen extends React.Component {
         return (
             <ScrollView>
                 <View style={styles.container}>
-                    <MainText>
-                        <HeadingText> Share a Place !</HeadingText>
-                    </MainText>
+                    <View style={styles.title}>
+                        <MainText > 
+                            <HeadingText> Share a Place !</HeadingText>
+                        </MainText>
+                    </View>
                     <PickImage />
                     <PickLocation />
                     <View style={styles.inputButton}>
@@ -80,15 +82,18 @@ class SharePlaceScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
+    title: {
+    },
     inputButton: {
         width: '80%',
-        alignItems: 'center', 
+        alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
     },
     container: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: 'flex-start',
     },
     imagePreview: {
         width: '100%',
