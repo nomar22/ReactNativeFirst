@@ -1,32 +1,46 @@
 import React from 'react';
-import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
 import ButtonWithBackground from '../../components/UI/ButtonWithBackground';
 import App from '../../../App';
+import Icon from 'react-native-vector-icons/Ionicons'
 class SideDrawer extends React.Component {
 
-    logoutHandler () {
-        App(); 
+    logoutHandler() {
+        App();
     }
 
     render() {
         return (
-            <View style={[styles.container, { width: Dimensions.get("window").width * 0.7 }]}>
-                <View >
-                    <Text>Menu</Text> 
-                    <ButtonWithBackground title="Logout" onPress={this.logoutHandler} > </ButtonWithBackground>
-                </View>
+            <View
+                style={[
+                    styles.container,
+                    { width: Dimensions.get("window").width * 0.7 }]}>
+                <TouchableOpacity onPress={this.logoutHandler}>
+                    <View style={styles.drawerItem}>
+                        <Icon style={styles.drawerItemIcon} name="ios-log-out" size={30} color="#aaa" ></Icon>
+                        <Text>Sign Out</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         );
     };
 };
 
 const styles = StyleSheet.create({
-    container: {  
-        paddingTop: 22,
+    container: {
+        paddingTop: 50,
         backgroundColor: "white",
         borderColor: 'red',
-        alignItems: 'center',
         flex: 1
+    },
+    drawerItem :{
+        flexDirection: 'row',
+        alignItems:'center',
+        padding:10,
+        backgroundColor:'#eee'
+    },
+    drawerItemIcon:{
+        marginRight: 10,
     }
 
 });
