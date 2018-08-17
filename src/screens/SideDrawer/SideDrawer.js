@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, TouchableOpacity, Platform } from 'react-native';
 import ButtonWithBackground from '../../components/UI/ButtonWithBackground';
 import App from '../../../App';
 import Icon from 'react-native-vector-icons/Ionicons'
@@ -17,7 +17,7 @@ class SideDrawer extends React.Component {
                     { width: Dimensions.get("window").width * 0.7 }]}>
                 <TouchableOpacity onPress={this.logoutHandler}>
                     <View style={styles.drawerItem}>
-                        <Icon style={styles.drawerItemIcon} name="ios-log-out" size={30} color="#aaa" ></Icon>
+                        <Icon style={styles.drawerItemIcon} name={Platform.OS === 'android' ? "md-log-out" : "ios-log-out"} size={30} color="#aaa" ></Icon>
                         <Text>Sign Out</Text>
                     </View>
                 </TouchableOpacity>
@@ -33,13 +33,13 @@ const styles = StyleSheet.create({
         borderColor: 'red',
         flex: 1
     },
-    drawerItem :{
+    drawerItem: {
         flexDirection: 'row',
-        alignItems:'center',
-        padding:10,
-        backgroundColor:'#eee'
+        alignItems: 'center',
+        padding: 10,
+        backgroundColor: '#eee'
     },
-    drawerItemIcon:{
+    drawerItemIcon: {
         marginRight: 10,
     }
 

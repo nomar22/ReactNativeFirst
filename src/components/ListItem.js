@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Platform } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 export default (props) => (
@@ -10,7 +10,7 @@ export default (props) => (
 
             
             <TouchableOpacity onPress={props.onDelete}  >
-                <Icon color="#841584"  size={30} name="ios-trash" /> 
+                <Icon color="#841584"  size={30} name={Platform.OS==='android'?"md-trash":"ios-trash"} /> 
             </TouchableOpacity>
         </View>
     </TouchableOpacity>

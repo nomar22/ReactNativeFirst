@@ -1,10 +1,10 @@
 import React from 'react';
 import {
     View,
-    Button,
     StyleSheet,
     ScrollView,
-    Text
+    TouchableOpacity,
+    Platform
 } from 'react-native';
 import { connect } from 'react-redux';
 import { addPlace } from '../../store/actions/index';
@@ -13,7 +13,8 @@ import HeadingText from '../../components/UI/HeadingText';
 import PlaceInput from '../../components/PlaceInput';
 import PickImage from '../../components/PickImage';
 import PickLocation from '../../components/PickLocation';
-import ButtonWithBackground from '../../components/UI/ButtonWithBackground';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 class SharePlaceScreen extends React.Component {
     state = {
@@ -66,8 +67,10 @@ class SharePlaceScreen extends React.Component {
                         <View style={styles.input} >
                             <PlaceInput placeName={this.state.placeName} onChangeText={this.placeNameChangeHandler} />
                         </View>
-                        <View style={styles.button} >
-                            <ButtonWithBackground title="Share" backgroundColor="#29aaf4" onPress={this.placeAddHandler} />
+                        <View>
+                            <TouchableOpacity onPress={this.placeAddHandler}  >
+                                <Icon color="#29aaf4" size={50} name={Platform.OS === 'android' ? "md-add-circle" : "ios-add-circle"} />
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </View>
@@ -78,11 +81,10 @@ class SharePlaceScreen extends React.Component {
 
 const styles = StyleSheet.create({
     inputButton: {
-        width: '100%',
-        alignItems: 'center',
+        width: '80%',
+        alignItems: 'center', 
         flexDirection: 'row',
-        justifyContent: 'space-around',
-        marginBottom: 20,
+        justifyContent: 'space-between',
     },
     container: {
         flex: 1,
@@ -94,10 +96,10 @@ const styles = StyleSheet.create({
     },
     button: {
     },
-    input:{
-        width:'40%',
+    input: {
+        width: '70%',
     },
- 
+
     placeHolder: {
         borderWidth: 1,
         borderColor: "black",
