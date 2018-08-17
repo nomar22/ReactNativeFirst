@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     input: {
         width: '100%',
         borderWidth: 1,
-        borderColor: '#eee',
+        borderColor: '#bbb',
         padding: 5,
         margin: 8
 
