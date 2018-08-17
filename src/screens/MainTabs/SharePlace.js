@@ -1,10 +1,10 @@
 import React from 'react';
-import { 
-    View, 
-    Button, 
-    StyleSheet, 
+import {
+    View,
+    Button,
+    StyleSheet,
     ScrollView
- } from 'react-native';
+} from 'react-native';
 import { connect } from 'react-redux';
 import { addPlace } from '../../store/actions/index';
 import MainText from '../../components/UI/MainText';
@@ -14,10 +14,10 @@ import PickImage from '../../components/PickImage';
 import PickLocation from '../../components/PickLocation';
 
 class SharePlaceScreen extends React.Component {
-    state= {
-        placeName:""
+    state = {
+        placeName: ""
     }
-    
+
     constructor(props) {
         super(props);
         this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
@@ -36,20 +36,20 @@ class SharePlaceScreen extends React.Component {
     }
 
     placeAddHandler = () => {
-        if(this.state.placeName.trim() !==""){
+        if (this.state.placeName.trim() !== "") {
             this.props.onPlaceAdd(this.state.placeName);
             this.setState({
-                placeName:""
+                placeName: ""
             })
         }
     }
 
-    placeNameChangeHandler = val =>{
+    placeNameChangeHandler = val => {
         this.setState({
-            placeName:val
+            placeName: val
         });
     }
- 
+
 
     render() {
         return (
@@ -58,8 +58,8 @@ class SharePlaceScreen extends React.Component {
                     <MainText>
                         <HeadingText> Share a Place !</HeadingText>
                     </MainText>
-                    <PickImage  />
-                    <PickLocation  />
+                    <PickImage />
+                    <PickLocation />
                     <PlaceInput placeName={this.state.placeName} onChangeText={this.placeNameChangeHandler} />
                     <View style={styles.button}>
                         <Button title="Share the Place" onPress={this.placeAddHandler} />
@@ -75,9 +75,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center'
     },
-    imagePreview:{
-        width:'100%',
-        height:'100%'
+    imagePreview: {
+        width: '100%',
+        height: '100%'
     },
     button: {
         margin: 8

@@ -1,11 +1,19 @@
 import React from 'react';
 import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import ButtonWithBackground from '../../components/UI/ButtonWithBackground';
+import App from '../../../App';
 class SideDrawer extends React.Component {
+
+    logoutHandler () {
+        App(); 
+    }
+
     render() {
         return (
-            <View style={[styles.container, { width: Dimensions.get("window").width * 0.8 }]}>
+            <View style={[styles.container, { width: Dimensions.get("window").width * 0.7 }]}>
                 <View >
-                    <Text>Menu</Text>
+                    <Text>Menu</Text> 
+                    <ButtonWithBackground title="Logout" onPress={this.logoutHandler} > </ButtonWithBackground>
                 </View>
             </View>
         );
@@ -13,7 +21,7 @@ class SideDrawer extends React.Component {
 };
 
 const styles = StyleSheet.create({
-    container: {
+    container: {  
         paddingTop: 22,
         backgroundColor: "white",
         borderColor: 'red',
